@@ -6,7 +6,12 @@ namespace Contacts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var mainMenu = @"Please choose an option:
+    (1) Display all contacts.
+    (2) Serach for a specific contact.
+    (3) Add a contact.
+    (4) Delete a contact.";
+            Console.WriteLine(mainMenu);
         }
     }
 }
