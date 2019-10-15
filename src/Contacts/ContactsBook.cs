@@ -8,7 +8,19 @@ namespace Contacts
 
         public void addContact(Contact contact)
         {
-            contactsList.Add(contact);
+            bool availableContact = checkAvailable(contact.getName());
+            if(!availableContact) contactsList.Add(contact);
+        }
+
+        public bool checkAvailable(string name)
+        {
+            bool available = false;
+            foreach(Contact contact in contactsList)
+            {
+               if(contact.getName() == name) available = true;
+            }
+        
+            return available;
         }
     }
 }
