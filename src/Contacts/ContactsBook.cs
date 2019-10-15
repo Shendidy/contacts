@@ -22,5 +22,10 @@ namespace Contacts
         
             return available;
         }
+
+        public List<Contact> getContactsList()
+        {
+            return contactsList;
+        }
     }
 }
